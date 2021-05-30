@@ -10,4 +10,5 @@ Router.map(function (){
   this.route('item',{path: '/item/:item_id'});
   this.route('error',{path : '/*path'});
   this.route('cart', {path : 'shopping-cart'});
+  this.route('railsitems');
 });
