@@ -1,10 +1,10 @@
-{{page-title "Item"}}
+
 <GeneralContainer>
     <div class="product item-details-page">
         <Product::Image @src={{this.productImage}}/>  
-        <Product::Details @color={{this.color}}/>
+        <Product::Details @color={{this.color}} @onChangeColor={{this.onChangeColor}}/>
     </div>
-
+    
     <h5 class="mt-5">Features</h5>
     <ul>
         <li>High-Performance wireless noise cancellatoin</li>
@@ -13,4 +13,3 @@
     </ul>  
 
 </GeneralContainer>
-{{outlet}}
