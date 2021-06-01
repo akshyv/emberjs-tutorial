@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    /*
     .product-color {
         display:inline-block;
         width: 24px;
@@ -46,13 +46,14 @@
         &.color-black {
             background: black;
         }
-    }
+    
     .active-red .color-red:before{
         border: 1px solid #c0392b;
     }
     .active-red .color-black:before{
         border: 1px solid #2c3e50;
-    }    
+    }   
+    */ 
 }
 
 .product {
