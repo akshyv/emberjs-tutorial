@@ -13,11 +13,19 @@
   </section>
 
   {{!-- Price --}}
-  <section>
+  <section class={{unless @isDetails 'h4'}}>     
     <i class="text-danger font-weight-bold">{{@price}}</i>
   </section>
-
-  <div>
-    <b>{{@description}}</b>
-  </div>
+  
+  {{#if @isDetails}}
+    <div>
+      <button class="btn btn-info" type="button" {{on "click" this.addToCart}}>
+        <i class="fa fa-shopping-cart mr-1"></i>
+        Add to cart
+      </button>
+    </div>
+    <div>
+      <b>{{@description}}</b>
+    </div>
+  {{/if}}
 </div>
